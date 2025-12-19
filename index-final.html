@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Գոռ & Անուշ | Հարսանիք</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(180deg, #fff7f0, #ffffff);
+      color: #3a3a3a;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 56px;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+      color: #b88c4a;
+    }
+    .date {
+      font-size: 22px;
+      margin-bottom: 40px;
+      color: #7a5b3a;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 25px;
+      padding: 35px 25px;
+      margin-bottom: 35px;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 30px;
+      margin-bottom: 10px;
+      color: #a6783d;
+    }
+    .time {
+      font-size: 19px;
+      margin-bottom: 15px;
+      color: #555;
+    }
+    .text {
+      font-size: 18px;
+      line-height: 1.9;
+      color: #444;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 14px 30px;
+      border-radius: 35px;
+      background: #b88c4a;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+    a.button:hover {
+      background: #a5783b;
+      transform: scale(1.05);
+    }
+    form {
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    input, select, button {
+      padding: 12px 18px;
+      margin: 8px 0;
+      border-radius: 25px;
+      border: 1px solid #ccc;
+      width: 80%;
+      max-width: 400px;
+      font-size: 16px;
+    }
+    button {
+      background-color: #b88c4a;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background-color: #a5783b;
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 16px;
+      color: #7a5b3a;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>ԳՈՌ & ԱՆՈՒՇ</h1>
+    <div class="date">31․01․2026</div>
+
+    <div class="card">
+      <p class="text">
+        Սիրով հրավիրում ենք Ձեզ կիսելու մեր կյանքի ամենաերջանիկ և հիշարժան օրը։ Ձեր ներկայությունը էլ ավելի կգեղեցկացնի մեր օրը 💖
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Եկեղեցու արարողություն</h2>
+      <div class="time">Վահանավանք • 14:00</div>
+      <a class="button" href="https://www.google.com/maps/search/?api=1&query=Վահանավանք" target="_blank">Բացել քարտեզը</a>
+    </div>
+
+    <div class="card">
+      <h2>Հարսանեկան խնջույք</h2>
+      <div class="time">Ռեստորան Արարատ • 17:00</div>
+      <a class="button" href="https://www.google.com/maps/search/?api=1&query=Արարատ+ռեստորան,+Կապան,+Սյունիքի+մարզ" target="_blank">Բացել քարտեզը</a>
+    </div>
+
+    <div class="card">
+      <h2>RSVP</h2>
+      <form action="https://formspree.io/f/mbdrlwbl" method="POST">
+        <input type="text" name="name" placeholder="Ձեր անունը" required />
+        <select name="attendance" required>
+          <option value="">Կմասնակցեք՞</option>
+          <option value="yes">Այո, կըգանք</option>
+          <option value="no">Ոչ, չի մասնակցի</option>
+        </select>
+        <button type="submit">Ուղարկել</button>
+      </form>
+    </div>
+
+    <footer>
+      Սիրով սպասում ենք Ձեր ներկայությանը 💍
+    </footer>
+  </div>
+</body>
+</html>
